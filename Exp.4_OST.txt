@@ -98,7 +98,7 @@ my-webapp
 
 </web-app>
 
-5.Servlet Program :
+5.Servlet Program :(final myapp rename and paste as in helloservelet)
 
 package com.example;
 
@@ -128,9 +128,9 @@ public class HelloServlet extends HttpServlet {
 
 7.Installing Tomcat:
  
-    Copy the .war file to the webapps/ directory of your Tomcat installation and start the server.
+    Copy the .war file to the webapps/ directory of your Tomcat installation from war file from the target and start the server. give startup.bat 
 
-    Visit http://localhost:8080/my-webapp/hello to see your servlet in action!
+    Visit http://localhost:8080/my-webapp/hello to see your servlet in action!..........
 
 
 
