@@ -1,28 +1,67 @@
-MAKE CHANGES TO FILES IN DIFFERENT BRANCHES AND PERFORM PULL REQUESTS AND MERGING 
+If you want to manage *versioning* and *branching* on GitHub without using the terminal, you can do it through the GitHub website. Here's how:
 
-1.cd desktop
-2.cd OSTlab
-3.git clone https://github.com/Deepika0422/OSTlab.git
-4.git init
-5.git checkout -b branch1
-6.git add text1.txt
-7.git commit -m "Change made successfully"
-8.git branch
-9.git remote add origin https://github.com/Deepika0422/OSTlab.git
-10.git push origin branch1
-11.git checkout -b main
-12.git add text2.txt
-13.git commit -m "new change"
-14.git push origin main
-  //Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 12 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (2/2), 240 bytes | 240.00 KiB/s, done.
-Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
-remote:
-remote: Create a pull request for 'main' on GitHub by visiting:
-remote:      https://github.com/Deepika0422/OSTlab/pull/new/main
-remote:
-To https://github.com/Deepika0422/OSTlab.git
- * [new branch]      main -> main
+---
+
+## *Versioning with Tags*
+1. *Navigate to Your Repository*:
+   - Open your repository on GitHub.
+
+2. *Go to the Releases Section*:
+   - Click on the *"Releases"* link in the right-hand menu or go to the *Code* tab and click *Releases* from the bar above the files.
+
+3. *Create a New Release*:
+   - Click the *"Draft a new release"* button.
+
+4. *Add a Tag*:
+   - In the *"Tag version"* field, enter the version number (e.g., v1.0.0).
+   - Select a branch to tag (usually main).
+
+5. *Add Release Details*:
+   - Provide a *title* and an optional *description*.
+   - You can attach release assets (e.g., binaries, files) if needed.
+
+6. *Publish the Release*:
+   - Click *"Publish release"* to create the tag and release.
+
+---
+
+## *Branching*
+1. *Navigate to Your Repository*:
+   - Open your repository on GitHub.
+
+2. *View Branches*:
+   - Click the *"Code"* tab, then click the dropdown that says *"main"* (or your default branch name) near the top-left.
+
+3. *Create a New Branch*:
+   - In the dropdown, type the name of the new branch (e.g., feature/new-feature).
+   - Click *"Create branch"*.
+
+4. *Switch Between Branches*:
+   - Use the same dropdown to select and switch between branches.
+
+5. *Edit and Commit Code in a Branch*:
+   - Navigate to the branch where you want to make changes.
+   - Use GitHub’s web editor:
+     - Open the file you want to edit.
+     - Click the *pencil icon* to edit.
+     - Make changes and *commit* them to your branch.
+
+6. *Create a Pull Request (PR)*:
+   - After making changes, click *"Pull requests"* in the repository menu.
+   - Click *"New pull request"*.
+   - Choose the source branch (e.g., feature/new-feature) and the target branch (e.g., main).
+   - Add a title and description, then click *"Create pull request"*.
+
+7. *Merge the Branch*:
+   - After reviewing the PR, click *"Merge pull request"*.
+   - Delete the branch using the *"Delete branch"* button if it's no longer needed.
+
+---
+
+## *Best Practices*
+- Use meaningful branch names:
+  - Example: feature/add-user-login, bugfix/fix-typo.
+- Use the *Pull Request template* (if configured in your repo) to ensure proper documentation for merges.
+- Always test changes in a branch before merging into the main branch.
+
+Let me know if you need help with any specific step!
